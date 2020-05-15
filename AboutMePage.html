@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>About Anand Samra</title>
+    <script src ="Website.js" > </script>
+    <link rel="stylesheet" type="text/css" href="website.css">
+
+
 </head>
 <body>
+<div class = "question-group">
+    <button onclick="revealFrom()" id="FromQuestion">Where am I from? </button>
+    <p id="fromAnswer" style="display:none"> I was born and raised in Vancouver, BC, Canada </p>
+    <button onclick="revealEducation()" id="educationQuestion">What did I study? </button>
+    <p id="educationAnswer" style="display:none"> I studied Chemical and Biological engineering with a Minor in Computer Science at UBC in Vancouver.
+        I focused on Bioprocess Engineering for my major and Machine Learning and numerical computation for my minor.  </p>
+    <button onclick="revealProjects()" id="projectQuestion">What are some projects I've done? </button>
+    <p id="projectsAnswer" style="display:none"> I have done quite a few projects throughout my life. The first is an Android app called TutorMe. This was my first experiance in development
+        and was completed at NWHacks in 2016, this project is actually what got me interested in Computer Science and I started my minor soon after completing it.
+        The app was designed to help students connect with tutor nearby. Users could sign up as a student or a tutor. Tutors would sign up with the information of how much they charge, as well as the subjects they specialize in.
+        Students would have no fields to fill in and could sign up with out adding any new information
+        Students would then be able to see nearby tutors, the subjects they teach, as well as the rates at which they charge. The app made use of Google's geotagging ability, a Firebase Database, and was implemented using Android Studio and was actually deployed to the Google Play Store for a while. <br/>
+     Another one of my projects is the research thesis I completed. I was fortunate enough to be able to go the Technical University of Delft in the Netherlands in 2017, and was offered the chance to do a thesis.
+    My thesis was on the topic of Interfacial Engineering, and I was attempting to prove that oil leaks/spills which occurred underwater could be self-repairing. I designed all of my experiments completely independently,
+    solved any issues that arose on my own, and decided what materials to use on my own. I was able to prove that it can be possible to create these self repairing oil leaks, however, it was only for olive oil. The final
+    conclusion I came to is that more research needs to be done using actual oil found in pipelines <br/>
+    The most recent project I was involved with is a Chrome Extension completed at NWHacks 2020. The Extension would scrape Facebook Messenger webpages for the message itself, and pass this to a Python Server.
+    The Python server would then run the message through IBM's Watson to perform Natural Language Processing (NLP) and determine the emotional tone of the message. From here an emoji was assigned depending on the tone, and
+    the emoji was displayed on the Messenger webpage. My team and I implemented this project using Javascript to scrape the webpage and display the emoji and Python to use Watson and determine the emotional tone. </p>
+    <button onclick="revealFun()" id="funQuestion">What do I do in my spare time? </button>
+    <p id="funAnswer" style="display:none"> You can usually find me Rock climbing in my spare time or playing video games </p>
 
+</div>
 </body>
 </html>
